@@ -5,19 +5,20 @@
 	URL: http://gettemplates.co
 -->
 <html>
-	<head>
+
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>kelvinhills collection</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
 	<meta name="twitter:title" content="" />
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
@@ -38,7 +39,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
-	
+
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -47,326 +48,376 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-	</head>
-	<body>
-	
+	<style>
+		#page {
+			display: none;
+		}
+
+		#loading {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 100;
+			width: 1000vw;
+			height: 1000vh;
+			background-color: rgba(192, 192, 192, 0.5);
+			background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+			background-repeat: no-repeat;
+			
+			background-position: center;
+		}
+	</style>
+	<script>
+		function onReady(callback) {
+			var intervalId = window.setInterval(function() {
+			  if (document.getElementsByTagName('body')[0] !== undefined) {
+				window.clearInterval(intervalId);
+				callback.call(this);
+			  }
+			}, 1000);
+		  }
+		  
+		  function setVisible(selector, visible) {
+			document.querySelector(selector).style.display = visible ? 'block' : 'none';
+		  }
+		  
+		  onReady(function() {
+			setVisible('.page', true);
+			setVisible('#loading', false);
+		  });
+	</script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
+
+</head>
+
+<body >
+	<div class="page">
 
 	<div id="fh5co-page">
-	
-	<div class="aside-toggle btn-circle">
-		<a href="#"><span></span><em>About</em></a>
-	</div>
 
-	
+		<div class="aside-toggle btn-circle">
+			<a href="#"><span></span><em>About</em></a>
+		</div>
 
-	<div id="fh5co-aside">
-		<div class="image-bg"></div>
-		<div class="overlay"></div> 
-		<div class="row">
-			<div class="col-md-12">
-				<div id="fh5co-aside-inner">
-					<div class="row" id="fh5co-bio">
-						<div class="col-md-12">
-							<h2>kelvinhills collection</h2>
+
+
+		<div id="fh5co-aside">
+			<div class="image-bg"></div>
+			<div class="overlay"></div>
+			<div class="row">
+				<div class="col-md-12">
+					<div id="fh5co-aside-inner">
+						<div class="row" id="fh5co-bio">
+							<div class="col-md-12">
+								<h2>kelvinhills collection</h2>
+							</div>
+							<div class="col-md-6">
+								<p>Sint, <a href="#">consectetur</a>, fugit. Sed, blanditiis. Autem quae perferendis
+									totam provident, consequuntur inventore reiciendis vitae suscipit rerum repellendus
+									facere voluptatem tenetur iure praesentium corrupti asperiores eos laborum debitis
+									eaque maiores magnam nisi exercitationem sunt maxime! At eligendi deserunt, iusto
+									natus molestias!</p>
+							</div>
+							<div class="col-md-6">
+								<p>Quas praesentium dolore unde delectus, nemo accusantium, qui ab illum debitis
+									assumenda tempore molestias ipsam, eveniet repellendus officiis in vel, explicabo
+									quos necessitatibus atque doloremque. Quae maiores delectus, magnam nam.</p>
+							</div>
+							<div class="col-md-12 fh5co-social">
+								<a href="#"><i class="icon-envelope"></i></a>
+								<a href="#"><i class="icon-twitter"></i></a>
+								<a href="#"><i class="icon-linkedin"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-google-plus"></i></a>
+							</div>
+							<div class="col-md-12" style="margin-top: 40px;">
+								<p>&copy; 2021 All Rights Reserved. Designed by <a
+										href="https://nungari100.netlify.app/">nungari100@gmail.com</a>
+							</div>
 						</div>
-						<div class="col-md-6">
-							<p>Sint, <a href="#">consectetur</a>, fugit. Sed, blanditiis. Autem quae perferendis totam provident, consequuntur inventore reiciendis vitae suscipit rerum repellendus facere voluptatem tenetur iure praesentium corrupti asperiores eos laborum debitis eaque maiores magnam nisi exercitationem sunt maxime! At eligendi deserunt, iusto natus molestias!</p>
-						</div>
-						<div class="col-md-6">
-							<p>Quas praesentium dolore unde delectus, nemo accusantium, qui ab illum debitis assumenda tempore molestias ipsam, eveniet repellendus officiis in vel, explicabo quos necessitatibus atque doloremque. Quae maiores delectus, magnam nam.</p>
-						</div>
-						<div class="col-md-12 fh5co-social">
-							<a href="#"><i class="icon-envelope"></i></a>
-							<a href="#"><i class="icon-twitter"></i></a>
-							<a href="#"><i class="icon-linkedin"></i></a>
-							<a href="#"><i class="icon-instagram"></i></a>
-							<a href="#"><i class="icon-google-plus"></i></a>
-						</div>
-<div class="col-md-12" style="margin-top: 40px;">
-	<p>&copy; 2021  All Rights Reserved. Designed by <a href="https://nungari100.netlify.app/">nungari100@gmail.com</a> 
-</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container-fluid" id="fh5co-image-grid">
-		
+		<div class="container-fluid" id="fh5co-image-grid">
 
-		<div class="grid">
-		  <div class="grid-sizer"></div>
 
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		  		<a href="single.html">
-					<div class="img-wrap">
-						<img src="images/h1.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+			<div class="grid">
+				<div class="grid-sizer"></div>
+
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single.html">
+						<div class="img-wrap">
+							<img src="images/h1.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		    <a href="single1.html">
-					<div class="img-wrap">
-						<img src="images/e1.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+					</a>
+				</div>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single1.html">
+						<div class="img-wrap">
+							<img src="images/e1.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		    <a href="single.html">
-					<div class="img-wrap">
-						<img src="images/e2.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+					</a>
+				</div>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single.html">
+						<div class="img-wrap">
+							<img src="images/e2.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		    <a href="single.html">
-					<div class="img-wrap">
-						<img src="images/e3.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+					</a>
+				</div>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single.html">
+						<div class="img-wrap">
+							<img src="images/e3.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		    <a href="single.html">
-					<div class="img-wrap">
-						<img src="images/h3.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+					</a>
+				</div>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single.html">
+						<div class="img-wrap">
+							<img src="images/h3.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		    <a href="single.html">
-					<div class="img-wrap">
-						<img src="images/h4.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+					</a>
+				</div>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single.html">
+						<div class="img-wrap">
+							<img src="images/h4.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		    <a href="single.html">
-					<div class="img-wrap">
-						<img src="images/h5.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+					</a>
+				</div>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single.html">
+						<div class="img-wrap">
+							<img src="images/h5.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		    <a href="single.html">
-					<div class="img-wrap">
-						<img src="images/l1.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+					</a>
+				</div>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single.html">
+						<div class="img-wrap">
+							<img src="images/l1.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		    <a href="single.html">
-					<div class="img-wrap">
-						<img src="images/l3.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+					</a>
+				</div>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single.html">
+						<div class="img-wrap">
+							<img src="images/l3.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		    <a href="single.html">
-					<div class="img-wrap">
-						<img src="images/h6.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+					</a>
+				</div>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single.html">
+						<div class="img-wrap">
+							<img src="images/h6.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		    <a href="single.html">
-					<div class="img-wrap">
-						<img src="images/e4.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+					</a>
+				</div>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single.html">
+						<div class="img-wrap">
+							<img src="images/e4.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		    <a href="single.html">
-					<div class="img-wrap">
-						<img src="images/l4.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+					</a>
+				</div>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single.html">
+						<div class="img-wrap">
+							<img src="images/l4.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		    <a href="single.html">
-					<div class="img-wrap">
-						<img src="images/l6.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+					</a>
+				</div>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single.html">
+						<div class="img-wrap">
+							<img src="images/l6.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		    <a href="single.html">
-					<div class="img-wrap">
-						<img src="images/l7.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+					</a>
+				</div>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single.html">
+						<div class="img-wrap">
+							<img src="images/l7.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		    <a href="single.html">
-					<div class="img-wrap">
-						<img src="images/l5.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+					</a>
+				</div>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single.html">
+						<div class="img-wrap">
+							<img src="images/l5.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <!-- <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		  		<a href="#">
-					<div class="img-wrap">
-						<img src="images/h7.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+					</a>
+				</div>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="#">
+						<div class="img-wrap">
+							<img src="images/h7.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		    <a href="single.html">
-					<div class="img-wrap">
-						<img src="images/e5.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+					</a>
+				</div>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single.html">
+						<div class="img-wrap">
+							<img src="images/e5.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		    <a href="single.html">
-					<div class="img-wrap">
-						<img src="images/l9.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+					</a>
+				</div>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single.html">
+						<div class="img-wrap">
+							<img src="images/l9.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					</a>
+				</div>
+				<!--   <div class="grid-item item animate-box" data-animate-effect="fadeIn">
 		    <a href="single.html">
 					<div class="img-wrap">
 						<img src="images/e6.jpg" alt="" class="img-responsive">
@@ -531,29 +582,34 @@
 					</div>
 				</a>
 		  </div> -->
-		  <div class="grid-item item animate-box" data-animate-effect="fadeIn">
-		    <a href="single.html">
-					<div class="img-wrap">
-						<img src="images/l13.jpg" alt="" class="img-responsive">
-					</div>
-					<div class="text-wrap">
-						<div class="text-inner">
-							<div>
-								<h2>Name of photo or title here</h2>
-								<span>72 photos</span>
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn">
+					<a href="single.html">
+						<div class="img-wrap">
+							<img src="images/l13.jpg" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner">
+								<div>
+									<h2>Name of photo or title here</h2>
+									<span>72 photos</span>
+								</div>
 							</div>
 						</div>
-					</div>
-				</a>
-		  </div>
+					</a>
+				</div>
+
+			</div>
+
 
 		</div>
 
-		
 	</div>
 
+</div>
+	<div id="loading">
+
 	</div>
-	
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -577,6 +633,7 @@
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
-	</body>
-</html>
 
+</body>
+
+</html>
